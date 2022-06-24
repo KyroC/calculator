@@ -17,10 +17,10 @@
             </div>
             <div id="numpad">
                 <div id="row1">
-                    <button>/</button>
-                    <button>*</button>
-                    <button>-</button>
-                    <button>+</button>
+                    <button onclick="operate(this,this,`divide`)">/</button>
+                    <button onclick="operate(this,this,`multiply`)">*</button>
+                    <button onclick="operate(this,this,`subtract`)">-</button>
+                    <button onclick="operate(this,this,`add`)">+</button>
                 </div>
                 <div id="row2">
                     <button onclick="input(1)">1</button>
@@ -32,13 +32,13 @@
                     <button onclick="input(4)">4</button>
                     <button onclick="input(5)">5</button>
                     <button onclick="input(6)">6</button>
-                    <button>clear</button>
+                    <button onclick="clearCalc()">clear</button>
                 </div>
                 <div id="row4">
                     <button onclick="input(7)">7</button>
                     <button onclick="input(8)">8</button>
                     <button onclick="input(9)">9</button>
-                    <button>=</button>
+                    <button onclick="equate()">=</button>
                 </div>
             </div>
         </div>
